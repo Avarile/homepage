@@ -1,0 +1,1 @@
+export type AuthLevelType = "operator" | "manager" | "admin" | "root"
