@@ -1,27 +1,17 @@
-import React from 'react';
-import { useTheme } from '@mui/material/styles';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import Divider from '@mui/material/Divider';
+import React from "react";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
 
-import Main from 'layouts/Main';
-import Container from 'components/Container';
-import {
-  FeaturedArticles,
-  FooterNewsletter,
-  Hero,
-  LatestStories,
-  MostViewedArticles,
-  PopularNews,
-  SidebarArticles,
-  SidebarNewsletter,
-  Tags,
-} from './components';
+import Main from "components/layouts/Main";
+import Container from "components/universalComponents/Container.component";
+import { FeaturedArticles, FooterNewsletter, Hero, LatestStories, MostViewedArticles, PopularNews, SidebarArticles, SidebarNewsletter, Tags } from "./components";
 
-const BlogNewsroom = () => {
+const Profilio = () => {
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+  const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
   });
 
@@ -31,7 +21,7 @@ const BlogNewsroom = () => {
       <Container>
         <PopularNews />
       </Container>
-      <Box bgcolor={'alternate.main'}>
+      <Box bgcolor={"alternate.main"}>
         <Container>
           <FeaturedArticles />
         </Container>
@@ -48,7 +38,7 @@ const BlogNewsroom = () => {
           ) : null}
         </Grid>
       </Container>
-      <Box bgcolor={'alternate.main'}>
+      <Box bgcolor={"alternate.main"}>
         <Container>
           <Grid container spacing={isMd ? 4 : 0}>
             <Grid item xs={12} md={8}>
@@ -63,7 +53,7 @@ const BlogNewsroom = () => {
       <Container maxWidth={800}>
         <Tags />
       </Container>
-      <Container maxWidth={800} paddingY={'0 !important'}>
+      <Container maxWidth={800} paddingY={"0 !important"}>
         <Divider />
       </Container>
       <Container>
@@ -73,4 +63,4 @@ const BlogNewsroom = () => {
   );
 };
 
-export default BlogNewsroom;
+export default Profilio;
