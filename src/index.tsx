@@ -7,15 +7,18 @@ import { Provider } from "react-redux";
 import { store } from "data/redux/redux.store";
 import "antd/dist/antd.css";
 import { BrowserRouter as Router } from "react-router-dom";
+import Page from "components/universalComponents/Page.component";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
   <Provider store={store}>
-    <React.StrictMode>
-      <Router>
-        <App />
-      </Router>
-    </React.StrictMode>
+    <Page>
+      <React.StrictMode>
+        <Router>
+          <App />
+        </Router>
+      </React.StrictMode>
+    </Page>
   </Provider>
 );
 

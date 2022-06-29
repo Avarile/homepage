@@ -1,61 +1,45 @@
 import React, { useEffect } from "react";
 import { Navigate, useLocation, RouteObject } from "react-router-dom";
 import LocalStorageService from "data/LocalStorage.service";
-import { LoadingSpinner } from "components/universalComponents/Loading.component";
-import * as ReactIs from "react-is";
 
-// type and interfaces
-type CustomFallBackType = boolean | React.ReactFragment | React.ReactPortal | null;
-type ChildType = React.LazyExoticComponent<() => JSX.Element> | React.FC;
+import Home from "components/views/IndexView";
+import Frontend from "components/views/Frontend";
+import Profilio from "components/views/Profilio";
+import { Backend } from "components/views";
 
-const RequireAuth = ({ children }: { children: JSX.Element }) => {
-  const [user, setUser] = React.useState(LocalStorageService.getCachedData("USER"));
-  useEffect(() => {
-    setUser(LocalStorageService.getCachedData("USER"));
-    console.log(user);
-  }, [LocalStorageService]);
+// const RequireAuth = ({ children }: { children: JSX.Element }) => {
+//   const [user, setUser] = React.useState(LocalStorageService.getCachedData("USER"));
+//   useEffect(() => {
+//     setUser(LocalStorageService.getCachedData("USER"));
+//     console.log(user);
+//   }, [LocalStorageService]);
 
-  let location = useLocation();
+//   let location = useLocation();
 
-  if (!user) {
-    return <Navigate to="/login" state={{ from: location }} replace />; // redirect the user to the /login page, but save the current location the user were. this allows us to send the user back to the page them after they login, which is nicer user experience than drop them off on home page
-  }
-  return children;
-};
-
-export const LazyLoadingHoc = (Child: ChildType) => {
-  return (
-    <React.Suspense fallback={<LoadingSpinner /> || <>...</>}>
-      <Child />
-    </React.Suspense>
-  );
-};
-
-const SuspenseWrapper = (Child: any, FallbackLoading?: CustomFallBackType) => {
-  // 判断jsx
-  if (ReactIs.isElement(Child)) {
-    return Child;
-  } else {
-    // 判断是否为clas和function组件
-    if (typeof Child === "function") {
-      return <Child></Child>;
-    } else {
-      // 判断是否为lazy组件
-      return <React.Suspense fallback={FallbackLoading || <>...</>}>{<Child />}</React.Suspense>;
-    }
-  }
-};
+//   if (!user) {
+//     return <Navigate to="/login" state={{ from: location }} replace />; // redirect the user to the /login page, but save the current location the user were. this allows us to send the user back to the page them after they login, which is nicer user experience than drop them off on home page
+//   }
+//   return children;
+// };
 
 // route structure
 
 export const routes: RouteObject[] = [
   {
     path: "/",
-    element: SuspenseWrapper(Login),
+    element: <Home />,
   },
   {
-    path: "/login",
-    element: SuspenseWrapper(Login),
+    path: "/frontend",
+    element: <Frontend />,
+  },
+  {
+    path: "/backend",
+    element: <Backend />,
+  },
+  {
+    path: "/selfintro",
+    element: <Profilio />,
   },
   // {
   //   path: "/mainentrance",
