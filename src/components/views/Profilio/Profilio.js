@@ -7,7 +7,7 @@ import Divider from "@mui/material/Divider";
 
 import Main from "components/layouts/Main";
 import Container from "components/universalComponents/Container.component";
-import { FeaturedArticles, FooterNewsletter, Hero, LatestStories, MostViewedArticles, PopularNews, SidebarArticles, SidebarNewsletter, Tags } from "./components";
+import { FeaturedArticles, FooterNewsletter, Hero, LatestStories, MostViewedArticles, Experience, SidebarArticles, SidebarNewsletter, Tags } from "./components";
 
 const Profilio = () => {
   const theme = useTheme();
@@ -19,7 +19,7 @@ const Profilio = () => {
     <Main colorInvert={true}>
       <Hero />
       <Container>
-        <PopularNews />
+        <Experience />
       </Container>
       <Box bgcolor={"alternate.main"}>
         <Container>

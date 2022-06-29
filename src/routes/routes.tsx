@@ -5,7 +5,7 @@ import LocalStorageService from "data/LocalStorage.service";
 import Home from "components/views/IndexView";
 import Frontend from "components/views/Frontend";
 import Profilio from "components/views/Profilio";
-import { Backend } from "components/views";
+import Backend from "components/views/Backend";
 
 // const RequireAuth = ({ children }: { children: JSX.Element }) => {
 //   const [user, setUser] = React.useState(LocalStorageService.getCachedData("USER"));
