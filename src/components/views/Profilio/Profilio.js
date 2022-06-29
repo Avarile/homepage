@@ -26,26 +26,12 @@ const Profilio = () => {
           <FeaturedArticles />
         </Container>
       </Box>
-      <Container>
-        <Grid container spacing={isMd ? 4 : 2}>
-          <Grid item xs={12} md={8}>
-            <LatestStories />
-          </Grid>
-          {isMd ? (
-            <Grid item xs={12} md={4}>
-              <SidebarArticles />
-            </Grid>
-          ) : null}
-        </Grid>
-      </Container>
+
       <Box bgcolor={"alternate.main"}>
         <Container>
           <Grid container spacing={isMd ? 4 : 0}>
-            <Grid item xs={12} md={8}>
+            <Grid item xs={12} md={12}>
               <MostViewedArticles />
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <SidebarNewsletter />
             </Grid>
           </Grid>
         </Container>
