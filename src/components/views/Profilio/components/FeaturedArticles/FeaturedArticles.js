@@ -23,30 +23,30 @@ const mock = [
     description: "A light weight ERP system designed for a small auto parts company in west Mel",
     title: "Blitz ERP",
     author: {
-      name: "React Nestjs",
+      name: "React Nestjs Ant-design",
       avatar: antd,
     },
-    date: "Apr - june 2022",
+    date: "",
   },
   {
     image: wms,
     description: "A logistic platform integratied with Auspot, Bigpost and FastWay",
     title: "3rd Party Api Integration platform",
     author: {
-      name: "React, Expressjs",
+      name: "React Expressjs Ant-design",
       avatar: react,
     },
-    date: "02 Aug",
+    date: "",
   },
   {
     image: ReactTemp,
-    description: "Qui blanditiis praesentium voluptatum deleniti atque corrupti",
-    title: "Unde omnis iste natus",
+    description: "A Customized React Template based on CRA integrated common tools.",
+    title: "CRA customized Template",
     author: {
-      name: "Chary Smith",
+      name: "React Redux Styled-components",
       avatar: react,
     },
-    date: "05 Mar",
+    date: "",
   },
 ];
 

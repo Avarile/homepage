@@ -1,26 +1,18 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import Card from '@mui/material/Card';
-import Avatar from '@mui/material/Avatar';
-import Typography from '@mui/material/Typography';
+import React from "react";
+import { useTheme } from "@mui/material/styles";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import Card from "@mui/material/Card";
+import Avatar from "@mui/material/Avatar";
+import Typography from "@mui/material/Typography";
 
 const mock = [
   {
-    title: 'Linux',
-    subtitle:
-      'Proficient with Linux and console based command line.',
+    title: "Linux",
+    subtitle: "Proficient with Linux and console based command line.",
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
+      <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -31,40 +23,19 @@ const mock = [
     ),
   },
   {
-    title: 'Git',
-    subtitle:
-      'Git proficiency as daily use.',
+    title: "Git",
+    subtitle: "Git proficiency as daily use.",
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
-        />
+      <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
       </svg>
     ),
   },
   {
-    title: 'Restful or Customized API design',
-    subtitle:
-      'Experi.',
+    title: "Restful or Customized API design",
+    subtitle: "Experience with Restful or most likely customized Api design (applies to fullstack).",
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
+      <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -75,61 +46,28 @@ const mock = [
     ),
   },
   {
-    title: 'Developer experience',
-    subtitle:
-      'Guaranteed to boost your productivity when building your app or website.',
+    title: "3rd Party Integration expertise",
+    subtitle: "Has experienced lots of logistic platform api integration.",
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
+      <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     ),
   },
   {
-    title: 'Continuous updates',
-    subtitle: 'We continually deploy improvements and new updates to theFront.',
+    title: "Supply Chain flow Control",
+    subtitle: "Has an understanding of how to implement flow control on SupplyChain to reflect truthy info of the Reality.",
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
-        />
+      <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
       </svg>
     ),
   },
   {
-    title: 'Free support',
-    subtitle:
-      '6 months of free technical support to help you build your website faster.',
+    title: "",
+    subtitle: "6 months of free technical support to help you build your website faster.",
     icon: (
-      <svg
-        height={24}
-        width={24}
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
+      <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -147,27 +85,12 @@ const Benefits = () => {
     <Grid container spacing={4}>
       {mock.map((item, i) => (
         <Grid item xs={12} sm={6} md={4} key={i}>
-          <Box
-            component={Card}
-            padding={4}
-            borderRadius={2}
-            width={1}
-            height={1}
-            data-aos={'fade-up'}
-            data-aos-delay={i * 100}
-          >
-            <Box display={'flex'} flexDirection={'column'}>
-              <Box
-                component={Avatar}
-                width={50}
-                height={50}
-                marginBottom={2}
-                bgcolor={theme.palette.primary.main}
-                color={theme.palette.background.paper}
-              >
+          <Box component={Card} padding={4} borderRadius={2} width={1} height={1} data-aos={"fade-up"} data-aos-delay={i * 100}>
+            <Box display={"flex"} flexDirection={"column"}>
+              <Box component={Avatar} width={50} height={50} marginBottom={2} bgcolor={theme.palette.primary.main} color={theme.palette.background.paper}>
                 {item.icon}
               </Box>
-              <Typography variant={'h6'} gutterBottom sx={{ fontWeight: 500 }}>
+              <Typography variant={"h6"} gutterBottom sx={{ fontWeight: 500 }}>
                 {item.title}
               </Typography>
               <Typography color="text.secondary">{item.subtitle}</Typography>

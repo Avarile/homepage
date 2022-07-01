@@ -62,10 +62,12 @@ const Experience = () => {
           sx={{
             fontWeight: 700,
           }}>
-          Generally I am a WebApp developer with strong Manufacturing/Supply Chain background.
+          Generally I am a web developer
+          <br />
+          with strong Manufacturing / Supply Chain background.
         </Typography>
         <Typography variant="h6" color={"text.secondary"} align={"center"} data-aos={"fade-up"}>
-          Or Vice versa
+          or Vice versa
         </Typography>
       </Box>
       <Grid container spacing={4}>
@@ -130,11 +132,11 @@ const Experience = () => {
                 </Box>
                 {item.description.map((desc, i) => {
                   return (
-                    <>
+                    <div key={i}>
                       <br />
 
                       <Typography color={"GrayText"}> {desc}</Typography>
-                    </>
+                    </div>
                   );
                 })}
                 {/* <Box marginTop={2} display={"flex"} justifyContent={"flex-end"}>

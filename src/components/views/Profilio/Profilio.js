@@ -36,14 +36,8 @@ const Profilio = () => {
           </Grid>
         </Container>
       </Box>
-      <Container maxWidth={800}>
-        <Tags />
-      </Container>
       <Container maxWidth={800} paddingY={"0 !important"}>
         <Divider />
-      </Container>
-      <Container>
-        <FooterNewsletter />
       </Container>
     </Main>
   );

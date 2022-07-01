@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import PropTypes from "prop-types";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Box from "@mui/material/Box";
@@ -63,12 +62,6 @@ const Main = ({ children, colorInvert = false, bgcolor = "transparent" }: { chil
       </Container>
     </Box>
   );
-};
-
-Main.propTypes = {
-  children: PropTypes.node,
-  colorInvert: PropTypes.bool,
-  bgcolor: PropTypes.string,
 };
 
 export default Main;

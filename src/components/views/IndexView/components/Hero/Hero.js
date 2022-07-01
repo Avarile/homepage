@@ -6,11 +6,12 @@ import Button from "@mui/material/Button";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { alpha, useTheme } from "@mui/material/styles";
 import Typed from "react-typed";
-import avi from "utils/assets/Website-video-home4.mp4";
+import { useNavigate } from "react-router-dom";
 
 import Container from "components/universalComponents/Container.component";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up("md"), {
     defaultMatches: true,
@@ -42,18 +43,26 @@ const Hero = () => {
                 sx={{
                   background: `linear-gradient(180deg, transparent 82%, ${alpha(theme.palette.secondary.main, 0.3)} 0%)`,
                 }}>
-                <Typed strings={["Startup.", "Progress.", "Success."]} typeSpeed={80} loop={true} />
+                <Typed strings={["Design.", "Demo.", "Reality."]} typeSpeed={110} loop={true} />
               </Typography>
             </Typography>
-            <Typography variant="h6" component="p" color="text.secondary" sx={{ fontWeight: 400 }}>
-              theFront will make your product look modern and professional while saving you precious time.
+            <Typography variant="h6" component="p" color="white" sx={{ fontWeight: 300 }}>
+              Programming is an abstraction of the real world, and a good programme is an accurate tracking and manipulating of some information flows of the Reality.
             </Typography>
             <Box display="flex" flexDirection={{ xs: "column", sm: "row" }} alignItems={{ xs: "stretched", sm: "flex-start" }} marginTop={4}>
-              <Button component={"a"} variant="contained" color="info" size="large" fullWidth={isMd ? false : true} href={"/demo"}>
+              <Button component={"a"} variant="contained" color="info" size="large" fullWidth={isMd ? false : true} href={"http://avarile.com:2095"}>
                 View Demos
               </Button>
               <Box marginTop={{ xs: 2, sm: 0 }} marginLeft={{ sm: 2 }} width={{ xs: "100%", md: "auto" }}>
-                <Button component={"a"} href={"/profilio"} variant="outlined" color="info" size="large" fullWidth={isMd ? false : true}>
+                <Button
+                  component={"a"}
+                  variant="outlined"
+                  color="info"
+                  size="large"
+                  fullWidth={isMd ? false : true}
+                  onClick={() => {
+                    navigate("/selfintro");
+                  }}>
                   Profilio
                 </Button>
               </Box>
