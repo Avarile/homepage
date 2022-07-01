@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/homepage/static/css/main.1fe15aa4.css",
+    "main.js": "/homepage/static/js/main.590374b8.js",
+    "static/js/787.2109c1a1.chunk.js": "/homepage/static/js/787.2109c1a1.chunk.js",
+    "static/media/Website-video-home4.mp4": "/homepage/static/media/Website-video-home4.a0e171a8137ed854fdf0.mp4",
+    "static/media/statemanagment.png": "/homepage/static/media/statemanagment.b14fdf30fed019d01568.png",
+    "static/media/ccfta.jpg": "/homepage/static/media/ccfta.620e15c688d3bdcde624.jpg",
+    "static/media/it.png": "/homepage/static/media/it.9931e57876b6d97d25be.png",
+    "static/media/wms.webp": "/homepage/static/media/wms.d71bbd892e5df2b921d9.webp",
+    "static/media/car-manufacturing.jpg": "/homepage/static/media/car-manufacturing.3d1dcbe7a32cad13f081.jpg",
+    "static/media/websiteUnderConstruction.png": "/homepage/static/media/websiteUnderConstruction.b96ff481d61a45c3444f.png",
+    "static/media/mobile.jpg": "/homepage/static/media/mobile.41a921a6f72af377560c.jpg",
+    "static/media/netCore.png": "/homepage/static/media/netCore.63dfd9338afc1fc12d66.png",
+    "static/media/typeScript.jpeg": "/homepage/static/media/typeScript.b26cf9fcf83b354f4962.jpeg",
+    "static/media/BlitzsErp.png": "/homepage/static/media/BlitzsErp.a63f4bf14bd152b9a7f2.png",
+    "static/media/ui_frameworks.png": "/homepage/static/media/ui_frameworks.e5babf1d17e00648dde7.png",
+    "static/media/supplyChain.webp": "/homepage/static/media/supplyChain.2ae64847e86a71d6a4d6.webp",
+    "static/media/SQL.jpeg": "/homepage/static/media/SQL.7012b56032c50b1e9360.jpeg",
+    "static/media/3PL.jpg": "/homepage/static/media/3PL.dd860c82fa36a819adfd.jpg",
+    "static/media/Nestjs.webp": "/homepage/static/media/Nestjs.4236c19b9eb87a5579b8.webp",
+    "static/media/Logistics.gif": "/homepage/static/media/Logistics.7a8076ae1cd303a636b3.gif",
+    "static/media/reactTemplate.png": "/homepage/static/media/reactTemplate.42565d93bfc2dacf61b8.png",
+    "static/media/mobx.png": "/homepage/static/media/mobx.d60f3ccb4b2654017a93.png",
+    "static/media/React-ReactNative.png": "/homepage/static/media/React-ReactNative.0b5db4d8a4f45048847c.png",
+    "static/media/Mylogo.jpg": "/homepage/static/media/Mylogo.ecd5ad9cf5142880d41a.jpg",
+    "static/media/antd.svg": "/homepage/static/media/antd.9bc8753afce8642ac89ffd972d6c90cd.svg",
+    "static/media/axios.svg": "/homepage/static/media/axios.bd6acdab1cd728f25cb13396600a2fe4.svg",
+    "static/media/redux.svg": "/homepage/static/media/redux.71eb13e2fdd1de624e9a856125906e3b.svg",
+    "index.html": "/homepage/index.html",
+    "static/media/react.svg": "/homepage/static/media/react.928f956d9c8ebcffb98a8e917154a81a.svg",
+    "main.1fe15aa4.css.map": "/homepage/static/css/main.1fe15aa4.css.map",
+    "main.590374b8.js.map": "/homepage/static/js/main.590374b8.js.map",
+    "787.2109c1a1.chunk.js.map": "/homepage/static/js/787.2109c1a1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1fe15aa4.css",
+    "static/js/main.590374b8.js"
+  ]
+}
