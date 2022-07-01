@@ -64,8 +64,8 @@ const mock = [
     ),
   },
   {
-    title: "",
-    subtitle: "6 months of free technical support to help you build your website faster.",
+    title: "Warehousing and stock - control",
+    subtitle: "Be able to customize flow control system to coherent currrent logistics reality, properly control the flow of merchandise, revenure and info.",
     icon: (
       <svg height={24} width={24} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path
