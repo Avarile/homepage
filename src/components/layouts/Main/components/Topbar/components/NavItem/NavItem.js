@@ -16,9 +16,6 @@ const NavItem = ({ title, route, colorInvert }) => {
 
   const linkColor = colorInvert ? "white" : "gray";
 
-  React.useEffect(() => {
-    console.log(colorInvert, linkColor);
-  }, [colorInvert]);
   return (
     <Box
       display={"flex"}
