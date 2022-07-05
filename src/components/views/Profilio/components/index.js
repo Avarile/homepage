@@ -7,3 +7,4 @@ export { default as Experience } from "./PopularNews";
 export { default as SidebarArticles } from "./SidebarArticles";
 export { default as SidebarNewsletter } from "./SidebarNewsletter";
 export { default as Tags } from "./Tags";
+export { default as MapHero } from './MapHero'

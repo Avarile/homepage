@@ -7,7 +7,7 @@ import Divider from "@mui/material/Divider";
 
 import Main from "components/layouts/Main";
 import Container from "components/universalComponents/Container.component";
-import { FeaturedArticles, FooterNewsletter, Hero, LatestStories, MostViewedArticles, Experience, SidebarArticles, SidebarNewsletter, Tags } from "./components";
+import { FeaturedArticles, Hero, MapHero, MostViewedArticles, Experience } from "./components";
 
 const Profilio = () => {
   const theme = useTheme();
@@ -38,6 +38,7 @@ const Profilio = () => {
       </Box>
       <Container maxWidth={800} paddingY={"0 !important"}>
         <Divider />
+        <MapHero />
       </Container>
     </Main>
   );

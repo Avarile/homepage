@@ -76,7 +76,8 @@ const VideoSection = () => {
           </Box>
           <Box marginBottom={3}>
             <Typography variant="h6" component="p" color="text.secondary">
-              Wait a sec before you close the page, this video is only about 3 mins, wont waste too much of your life!, why not give it a go?.
+              {/* Wait a sec before you close the page, this video is only about 3 mins, wont waste too much of your life!, why not give it a go?. */}
+              Well, I am going to make a self Introduction, still working on it. so, I put up an random video as placeholder... for now.
             </Typography>
           </Box>
           <Box height={1} width={1} maxHeight={400} maxWidth={{ xs: "100%", sm: 800 }} marginTop={3}>

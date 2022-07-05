@@ -18,7 +18,7 @@ root.render(
   <Provider store={store}>
     <Page>
       <React.StrictMode>
-        <Router>
+        <Router basename="homepage">
           <App />
         </Router>
       </React.StrictMode>
